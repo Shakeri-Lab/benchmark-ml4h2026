@@ -1,0 +1,37 @@
+split:
+  processed_root: datasets_processed
+  split_name: pedap_patients_70_10_20_seed42
+  split_part: test
+  split_root: configs/preprocessing
+model_data:
+  seed: 42
+  model:
+    name: arimax
+    params:
+      boundary_gap_len: 1
+      enforce_invertibility: false
+      enforce_stationarity: false
+      fit_maxiter: 10000
+      fit_sample_limit: 2000
+      fit_sample_seed: 42
+      fit_strategy: global
+      future_exog_strategy: zeros
+      order:
+      - 2
+      - 1
+      - 1
+      trend: c
+      univariate: false
+  dataloader:
+    batch_size: 64
+    history_len: 48
+    nocturnal_end_hour: 6
+    nocturnal_start_hour: 0
+    num_workers: 0
+    pred_len: 12
+    shuffle: true
+    stride: 1
+    univariate: false
+evaluation:
+  compile: false
+notes: Rerun of best_arimax_pedap_p12 eval config with stride-1 inference

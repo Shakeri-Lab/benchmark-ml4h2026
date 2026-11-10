@@ -1,0 +1,18 @@
+# Core dependencies for preprocessing and benchmarking pipeline
+# Use NumPy 2.x; pandas 2.2.2+ supports NumPy 2
+pandas>=2.2.2,<3.0
+python-dateutil>=2.8
+numpy>=2.0,<3.0
+tqdm>=4.66
+openpyxl>=3.1
+xlrd>=2.0.1
+torch>=2.2
+PyYAML>=6.0
+einops>=0.7
+statsmodels>=0.14
+scipy>=1.10
+tensorflow==2.18.0
+timesfm @ git+https://github.com/google-research/timesfm.git
+timesfm @ git+https://github.com/google-research/timesfm.git
+scipy>=1.10
+h11>=0.14

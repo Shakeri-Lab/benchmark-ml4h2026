@@ -1,0 +1,25 @@
+loss:
+  type: per_y_seg_surrogate
+  fit_name: leave_out_dclp5
+  parameter_artifact: outputs/surrogate/loss_fit/per_y_seg_surrogate/leave_out_dclp5/per_y_seg_params.npz
+  y_min: 40
+  y_max: 400
+  clip_range:
+  - 40
+  - 400
+  value_scale: mg/dL
+  fitting_recipe:
+    include_datasets:
+    - dclp3
+    - pedap
+    - azt1d
+    architectures:
+    - gru
+    - dlinear
+    - patchmlp
+    - itransformer
+    horizon_count: 6
+    weighted_bins: true
+    augmentation_k_g: 0.2
+    augmentation_min_count: 100.0
+    augmentation_sigma_frac: 0.3

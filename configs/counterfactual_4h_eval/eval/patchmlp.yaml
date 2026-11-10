@@ -1,0 +1,45 @@
+evaluation:
+  compile: false
+  event_thresholds:
+    nocturnal: 0
+    post_bolus: 3
+    post_meal: 3
+  metrics:
+  - rmse
+  - mae
+  - seg
+  - gmse
+  - grmse
+  - ceg_ratio
+  - peg_ratio
+  - seg_z_ratio
+model_data:
+  dataloader:
+    batch_size: 64
+    feature_cols:
+    - cgm
+    - basal
+    - bolus
+    history_len: 288
+    nocturnal_end_hour: 6
+    nocturnal_start_hour: 0
+    num_workers: 0
+    pred_len: 48
+    shuffle: false
+    stride: 48
+    univariate: false
+  model:
+    name: patchmlp
+    params:
+      d_model: 512
+      e_layers: 2
+      output_attention: false
+      univariate: false
+      use_norm: true
+  seed: 42
+notes: Counterfactual eval config for patchmlp on action_cf_benchmark_controliq; selected
+  from 015 with val_rmse=9.723328
+split:
+  processed_root: datasets_processed
+  split_name: action_cf_controliq_4h
+  split_part: test

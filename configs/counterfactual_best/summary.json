@@ -1,0 +1,47 @@
+{
+  "dataset": "action_cf_benchmark",
+  "selected": {
+    "arimax": {
+      "best_run": "outputs/hyperparameters/arimax_action_cf_benchmark/014",
+      "val_rmse": 31.56986349044734,
+      "train_config": "configs/counterfactual_best/train/arimax_action_cf_benchmark.yaml",
+      "eval_config": "configs/counterfactual_best/eval/arimax_action_cf_benchmark.yaml"
+    },
+    "attengluco": {
+      "best_run": "outputs/hyperparameters/attengluco_action_cf_benchmark/041",
+      "val_rmse": 9.073471490108034,
+      "train_config": "configs/counterfactual_best/train/attengluco_action_cf_benchmark.yaml",
+      "eval_config": "configs/counterfactual_best/eval/attengluco_action_cf_benchmark.yaml"
+    },
+    "dlinear": {
+      "best_run": "outputs/hyperparameters/dlinear_action_cf_benchmark/026",
+      "val_rmse": 31.218422981172086,
+      "train_config": "configs/counterfactual_best/train/dlinear_action_cf_benchmark.yaml",
+      "eval_config": "configs/counterfactual_best/eval/dlinear_action_cf_benchmark.yaml"
+    },
+    "gru": {
+      "best_run": "outputs/hyperparameters/gru_action_cf_benchmark/039",
+      "val_rmse": 7.441406578642294,
+      "train_config": "configs/counterfactual_best/train/gru_action_cf_benchmark.yaml",
+      "eval_config": "configs/counterfactual_best/eval/gru_action_cf_benchmark.yaml"
+    },
+    "itransformer": {
+      "best_run": "outputs/hyperparameters/itransformer_action_cf_benchmark/061",
+      "val_rmse": 10.277041361318568,
+      "train_config": "configs/counterfactual_best/train/itransformer_action_cf_benchmark.yaml",
+      "eval_config": "configs/counterfactual_best/eval/itransformer_action_cf_benchmark.yaml"
+    },
+    "patchmlp": {
+      "best_run": "outputs/hyperparameters/patchmlp_action_cf_benchmark/046",
+      "val_rmse": 7.713584694316773,
+      "train_config": "configs/counterfactual_best/train/patchmlp_action_cf_benchmark.yaml",
+      "eval_config": "configs/counterfactual_best/eval/patchmlp_action_cf_benchmark.yaml"
+    },
+    "patchmlp_glimmer": {
+      "based_on_patchmlp_run": "outputs/hyperparameters/patchmlp_action_cf_benchmark/046",
+      "patchmlp_val_rmse": 7.713584694316773,
+      "train_config": "configs/counterfactual_best/train/patchmlp_glimmer_action_cf_benchmark.yaml",
+      "eval_config": "configs/counterfactual_best/eval/patchmlp_glimmer_action_cf_benchmark.yaml"
+    }
+  }
+}

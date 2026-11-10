@@ -1,0 +1,56 @@
+split:
+  processed_root: datasets_processed
+  split_name: action_cf_benchmark_bolus
+  split_root: configs/preprocessing
+  split_part: test
+model_data:
+  dataloader:
+    batch_size: 64
+    history_len: 96
+    nocturnal_end_hour: 6
+    nocturnal_start_hour: 0
+    num_workers: 0
+    pred_len: 24
+    shuffle: false
+    stride: 24
+    univariate: false
+  model:
+    name: arimax
+    params:
+      boundary_gap_len: 1
+      cf_shifted_exog_idx:
+      - 0
+      - 1
+      drop_static_exog: true
+      enforce_invertibility: true
+      enforce_stationarity: true
+      fit_maxiter: 10000
+      fit_sample_limit: 1000
+      fit_sample_seed: 42
+      fit_strategy: global
+      future_exog_strategy: provided
+      normalize_insulin_by_weight: false
+      order:
+      - 2
+      - 0
+      - 2
+      trend: c
+      univariate: false
+  seed: 42
+evaluation:
+  metrics:
+  - rmse
+  - mae
+  - seg
+  - gmse
+  - grmse
+  - ceg_ratio
+  - peg_ratio
+  - seg_z_ratio
+  event_thresholds:
+    post_meal: 3
+    post_bolus: 3
+    nocturnal: 0
+  compile: false
+notes: Policy-regret eval config for arimax on action_cf_benchmark_bolus; selected
+  from 014 with val_rmse=31.569863

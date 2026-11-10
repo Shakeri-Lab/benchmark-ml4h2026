@@ -1,0 +1,53 @@
+split:
+  split_name: pedap_patients_70_10_20_seed42
+  split_root: configs/preprocessing
+  processed_root: datasets_processed
+  split_part: test
+model_data:
+  seed: 42
+  model:
+    name: glimmer
+    params:
+      variant: transformer
+      context_len: 288
+      num_blocks: 1
+      num_heads: 8
+      ff_dim: 256
+      dropout: 0.1
+      key_dim: 16
+      activation: relu
+      loss_weights:
+      - 1.0
+      - 4.0
+      - 2.5
+      epochs: 30
+      batch_size: 48
+      learning_rate: 0.001
+      optimizer: adam
+      univariate: false
+      ma_window_size: 200
+  dataloader:
+    history_len: 487
+    pred_len: 12
+    stride: 12
+    batch_size: 48
+    univariate: false
+    num_workers: 0
+    nocturnal_start_hour: 0
+    nocturnal_end_hour: 6
+evaluation:
+  metrics:
+  - rmse
+  - mae
+  - seg
+  - gmse
+  - grmse
+  - ceg_ratio
+  - peg_ratio
+  - seg_z_ratio
+  compile: false
+  event_thresholds:
+    post_meal: 3
+    post_bolus: 3
+    nocturnal: 0
+notes: Eval multivariate GLIMMER on PEDAP

@@ -1,0 +1,62 @@
+model_data:
+  dataloader:
+    batch_size: 64
+    feature_cols:
+    - cgm
+    - basal
+    - bolus
+    history_len: 288
+    nocturnal_end_hour: 6
+    nocturnal_start_hour: 0
+    num_workers: 0
+    pred_len: 48
+    shuffle: true
+    stride: 48
+    univariate: false
+  model:
+    name: arimax
+    params:
+      boundary_gap_len: 1
+      cf_shifted_exog_idx:
+      - 0
+      - 1
+      drop_static_exog: true
+      enforce_invertibility: true
+      enforce_stationarity: true
+      fit_maxiter: 10000
+      fit_sample_limit: 1000
+      fit_sample_seed: 42
+      fit_strategy: global
+      future_exog_strategy: provided
+      normalize_insulin_by_weight: true
+      order:
+      - 3
+      - 0
+      - 2
+      trend: c
+      univariate: false
+  seed: 42
+notes: 'ARIMAX 4h arm-2 search: order=(3,0,2) trend=c hist=288 wnorm=True'
+split:
+  processed_root: datasets_processed
+  split_name: action_cf_benchmark_controliq
+  split_root: configs/preprocessing
+  train_part: train
+  val_part: val
+training:
+  amp: false
+  compile: false
+  early_stopping:
+    min_delta: 0.01
+    patience: 5
+  epochs: 30
+  grad_clip_norm: null
+  loss: mse
+  optimizer:
+    lr: 0.0001
+    name: adam
+    weight_decay: 0.0
+  scheduler:
+    min_lr: 1.0e-06
+    name: reduce_on_plateau
+    patience: 2

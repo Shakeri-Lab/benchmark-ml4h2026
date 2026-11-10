@@ -1,0 +1,41 @@
+model: patchmlp
+seed: 42
+datasets:
+- dclp3
+- dclp5
+- pedap
+- azt1d
+detection_mode: trajectory
+horizon_minutes: 30
+threshold_sweep_min: 40
+threshold_sweep_max: 120
+threshold_sweep_step: 1
+fa_day_targets:
+- 0.5
+- 1.0
+- 2.0
+- 3.0
+true_hypo_threshold: 70.0
+min_event_duration_minutes: 15
+step_minutes: 5
+use_refractory: true
+methods:
+- name: mse
+  label: MSE
+  root: outputs/surrogate/mechanism_frontier_tests/dense_predictions/mse
+  fallback_root: outputs/surrogate/mse_pair_generation
+  template: '{root}/{model}_{dataset}/seed_{seed}'
+  fallback_template: '{root}/{model}_{dataset}'
+- name: threshold_crossing_kovatchev_clinical_loss
+  label: Threshold-crossing Kovatchev
+  root: outputs/surrogate/mechanism_frontier_tests/dense_predictions/threshold_crossing_kovatchev_clinical_loss
+  template: '{root}/{model}_{dataset}/seed_{seed}'
+- name: wolff_weighted_loss
+  label: Wolff weighted
+  root: outputs/surrogate/mechanism_frontier_tests/dense_predictions/wolff_weighted_loss
+  template: '{root}/{model}_{dataset}/seed_{seed}'
+- name: glimmer_fixed_transformer_weights
+  label: GLIMMER fixed
+  root: outputs/surrogate/mechanism_frontier_tests/dense_predictions/glimmer_fixed_transformer_weights
+  template: '{root}/{model}_{dataset}/seed_{seed}'
+output_dir: outputs/surrogate/mechanism_frontier_tests/decision_frontier

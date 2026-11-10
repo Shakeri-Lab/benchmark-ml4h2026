@@ -1,0 +1,14 @@
+model: ARIMAX
+implementation: ml4h2026/simulator/recursive_arx.py
+class: RecursiveARX
+specification:
+  glucose_lags: 2
+  insulin_lags: 48
+  difference_order: 0
+  ridge: 0.01
+history_steps: 96
+forecast_steps: 48
+sampling_minutes: 5
+selection: Four-hour factual validation RMSE among finite stable fits
+validation_rmse: 27.37368709092789
+fresh_training_only_refit: true

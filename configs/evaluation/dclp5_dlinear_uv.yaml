@@ -1,0 +1,37 @@
+split:
+  split_name: dclp5_patients_70_10_20_seed42
+  split_root: configs/preprocessing
+  processed_root: datasets_processed
+  split_part: test
+model_data:
+  seed: 42
+  model:
+    name: dlinear
+    params:
+      individual: false
+      univariate: true
+  dataloader:
+    history_len: 48
+    pred_len: 12
+    stride: 12
+    batch_size: 128
+    univariate: true
+    num_workers: 0
+    nocturnal_start_hour: 0
+    nocturnal_end_hour: 6
+evaluation:
+  metrics:
+  - rmse
+  - mae
+  - seg
+  - gmse
+  - grmse
+  - ceg_ratio
+  - peg_ratio
+  - seg_z_ratio
+  compile: false
+  event_thresholds:
+    post_meal: 3
+    post_bolus: 3
+    nocturnal: 0
+notes: Univariate dlinear on DCLP5

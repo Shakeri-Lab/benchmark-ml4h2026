@@ -1,0 +1,59 @@
+# Ignore large data directories
+datasets_raw/
+datasets_processed/
+datasets_preprocessed/
+
+# Python artifacts
+__pycache__/
+*.pyc
+.venv/
+.conda_envs/
+env/
+
+# Private tests
+internal_tests/
+
+# Scripts artifacts
+scripts/__pycache__/
+# Untracked SLURM scripts
+scripts/slurm/
+
+# Local outputs
+outputs/
+rebuttal/
+/surrogate/
+/hypo_gating/
+/hypo_results.csv
+/.arimax4h_search_jobid
+results.TeX
+MLHC26_Benchmark_Alireza/
+
+# OS noise
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Parroting upstream data (large, not tracked)
+/third_party/parroting_upstream/data/
+# Local usage notes
+/USAGE_GUIDE.md
+/third_party/parroting_upstream/
+# Untracked appendix draft
+
+# Third party for integration
+
+# Editing backups and scratch files created during analysis runs.
+# Kept on disk deliberately (they are the pre-edit copies of scripts) but not
+# part of the source tree.
+*.bak_*
+.*.py.bak_*
+*_tmp.py
+.codex
+.basal8_jobid
+
+# Generated LaTeX result tables at the repo root. These are build products of
+# analysis/build_*.py and the arm pipelines; they go stale as soon as results
+# are regenerated, so they are kept on disk but not tracked.
+/*.tex

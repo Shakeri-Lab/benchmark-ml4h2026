@@ -1,0 +1,77 @@
+model_data:
+  dataloader:
+    batch_size: 64
+    history_len: 288
+    nocturnal_end_hour: 6
+    nocturnal_start_hour: 0
+    num_workers: 0
+    pred_len: 6
+    shuffle: true
+    stride: 6
+    univariate: false
+  model:
+    name: patchmlp_glimmer
+    params:
+      d_model: 512
+      e_layers: 2
+      output_attention: false
+      univariate: false
+      use_norm: false
+  seed: 42
+notes: Glimmer rerun with GA-selected loss weights pinned (w_hypo=3.6917, w_hyper=2.8276)
+  from the original search; GA disabled so only the checkpoint-restore fix differs.
+split:
+  processed_root: datasets_processed
+  split_name: dclp3_patients_70_10_20_seed42
+  split_root: configs/preprocessing
+  train_part: train
+  val_part: val
+training:
+  amp: false
+  compile: false
+  early_stopping:
+    min_delta: 0.01
+    patience: 5
+  epochs: 30
+  ga_search:
+    elite_fraction: 0.5
+    enabled: false
+    fitness: rmse
+    generations: 15
+    inner_epochs: 15
+    mutation_rate: 1.0
+    mutation_scale: 0.0556
+    population_size: 10
+    seed: 42
+    selection: uniform
+    w_hyper_range:
+    - 1.0
+    - 10.0
+    w_hypo_range:
+    - 1.0
+    - 10.0
+  glimmer_ga:
+    generations: 15
+    inner_epochs: 15
+    population_size: 10
+  grad_clip_norm: 1.0
+  loss: glimmer_weighted
+  loss_params:
+    hyper_threshold: 180.0
+    hypo_threshold: 70.0
+    mode: mae
+    w_hyper: 2.8276
+    w_hypo: 3.6917
+  optimizer:
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+    lr: 0.0005
+    name: adamw
+    weight_decay: 0.001
+  scheduler:
+    factor: 0.5
+    min_lr: 1.0e-06
+    name: reduce_on_plateau
+    patience: 2

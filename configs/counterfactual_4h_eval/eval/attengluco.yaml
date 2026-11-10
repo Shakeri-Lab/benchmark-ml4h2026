@@ -1,0 +1,44 @@
+evaluation:
+  compile: false
+  event_thresholds:
+    nocturnal: 0
+    post_bolus: 3
+    post_meal: 3
+  metrics:
+  - rmse
+  - mae
+  - seg
+  - gmse
+  - grmse
+  - ceg_ratio
+  - peg_ratio
+  - seg_z_ratio
+model_data:
+  dataloader:
+    batch_size: 128
+    feature_cols:
+    - cgm
+    - basal
+    - bolus
+    history_len: 288
+    nocturnal_end_hour: 6
+    nocturnal_start_hour: 0
+    num_workers: 0
+    pred_len: 48
+    shuffle: false
+    stride: 48
+    univariate: false
+  model:
+    name: attengluco
+    params:
+      d_model: 64
+      ff_units: 128
+      n_heads: 4
+      univariate: false
+  seed: 42
+notes: Counterfactual eval config for attengluco on action_cf_benchmark_controliq;
+  selected from 033 with val_rmse=12.726745
+split:
+  processed_root: datasets_processed
+  split_name: action_cf_controliq_4h
+  split_part: test

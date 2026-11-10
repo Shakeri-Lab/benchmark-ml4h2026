@@ -1,0 +1,41 @@
+split:
+  processed_root: datasets_processed
+  split_name: action_cf_benchmark_controliq
+  split_part: test
+model_data:
+  dataloader:
+    batch_size: 64
+    history_len: 288
+    nocturnal_end_hour: 6
+    nocturnal_start_hour: 0
+    num_workers: 0
+    pred_len: 24
+    shuffle: false
+    stride: 24
+    univariate: false
+  model:
+    name: patchmlp_glimmer
+    params:
+      d_model: 1024
+      e_layers: 2
+      output_attention: false
+      univariate: false
+      use_norm: false
+  seed: 42
+evaluation:
+  metrics:
+  - rmse
+  - mae
+  - seg
+  - gmse
+  - grmse
+  - ceg_ratio
+  - peg_ratio
+  - seg_z_ratio
+  event_thresholds:
+    post_meal: 3
+    post_bolus: 3
+    nocturnal: 0
+  compile: false
+notes: Counterfactual eval config for patchmlp_glimmer on action_cf_benchmark_controliq;
+  using best PatchMLP architecture from 062 with val_rmse=9.412732

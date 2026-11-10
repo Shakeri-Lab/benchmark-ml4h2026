@@ -1,0 +1,29 @@
+split:
+  split_name: pedap_patients_70_10_20_seed42
+  split_root: configs/preprocessing
+  processed_root: datasets_processed
+  train_part: train
+  val_part: val
+model_data:
+  seed: 42
+  model:
+    name: mar
+    params:
+      k: 3
+      p: 3
+      init_sigma: null
+      batch_size: 128
+      tol: 1.0e-05
+      max_iter: 100
+      univariate: false
+  dataloader:
+    history_len: 48
+    pred_len: 12
+    stride: 12
+    batch_size: 128
+    univariate: false
+    num_workers: 0
+    shuffle: true
+    nocturnal_start_hour: 0
+    nocturnal_end_hour: 6
+notes: Multivariate MAR-EM on PEDAP

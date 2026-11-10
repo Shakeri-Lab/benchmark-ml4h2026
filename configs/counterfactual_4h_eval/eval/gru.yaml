@@ -1,0 +1,52 @@
+evaluation:
+  compile: false
+  event_thresholds:
+    nocturnal: 0
+    post_bolus: 3
+    post_meal: 3
+  metrics:
+  - rmse
+  - mae
+  - seg
+  - gmse
+  - grmse
+  - ceg_ratio
+  - peg_ratio
+  - seg_z_ratio
+model_data:
+  dataloader:
+    batch_size: 64
+    feature_cols:
+    - cgm
+    - basal
+    - bolus
+    history_len: 288
+    nocturnal_end_hour: 6
+    nocturnal_start_hour: 0
+    num_workers: 0
+    pred_len: 48
+    shuffle: false
+    stride: 48
+    univariate: false
+  model:
+    name: gru
+    params:
+      bidirectional: true
+      dropout: 0.2
+      head_hidden_dim: 32
+      head_num_layers: 2
+      head_type: linear
+      hidden_size: 1024
+      num_layers: 2
+      univariate: false
+      use_layernorm: true
+  seed: 42
+notes: Counterfactual eval config for gru on action_cf_benchmark_controliq; selected
+  from 053 with val_rmse=12.071805
+split:
+  processed_root: datasets_processed
+  split_name: action_cf_controliq_4h
+  split_part: test
+training:
+  optimizer:
+    lr: 0.0005

@@ -1,0 +1,198 @@
+[
+  {
+    "path": "outputs/results/bestck_arimax_dclp3_p12/config.yaml",
+    "destination": "clinical/arimax_dclp3.yaml",
+    "sha256": "8dd8b4645b1ee2f0f88596022d131e5948f184e2fcbb6eb202f21db38e3f9cac"
+  },
+  {
+    "path": "outputs/results/bestck_arimax_dclp5_p12/config.yaml",
+    "destination": "clinical/arimax_dclp5.yaml",
+    "sha256": "67c95f299672554008838853422bbe2af4783fbb3f91310fa46cbd0248d3ee55"
+  },
+  {
+    "path": "outputs/results/bestck_arimax_pedap_p12/config.yaml",
+    "destination": "clinical/arimax_pedap.yaml",
+    "sha256": "3afba9e7e85c7c2cb07a47607ced6b52e87dc49e6e418802837e5020f8ac015a"
+  },
+  {
+    "path": "outputs/results/bestck_arimax_iobp2_p12/config.yaml",
+    "destination": "clinical/arimax_iobp2.yaml",
+    "sha256": "9cacde7be75051d0f98a4c8e246b788f2d39357ffede504349663661173761c9"
+  },
+  {
+    "path": "outputs/results/bestck_dlinear_dclp3_p12/config.yaml",
+    "destination": "clinical/dlinear_dclp3.yaml",
+    "sha256": "98405acfc2e7ef5e0481bde1b16e7760727c768205b0ddf207896d6bbe93bf73"
+  },
+  {
+    "path": "outputs/results/bestck_dlinear_dclp5_p12/config.yaml",
+    "destination": "clinical/dlinear_dclp5.yaml",
+    "sha256": "235efb145d76dfb3951da7d07d169d226718c470cfce9b22ab9fb5c1b85032d9"
+  },
+  {
+    "path": "outputs/results/bestck_dlinear_pedap_p12/config.yaml",
+    "destination": "clinical/dlinear_pedap.yaml",
+    "sha256": "5ad2c8a7043c65392c13e1e44938ba7090b59ab65722d287863ed8894cd61a0a"
+  },
+  {
+    "path": "outputs/results/bestck_dlinear_iobp2_p12/config.yaml",
+    "destination": "clinical/dlinear_iobp2.yaml",
+    "sha256": "5524d186117400113a79b993f6db722246db2007f2e58c8cc4fd63d3d3e00728"
+  },
+  {
+    "path": "outputs/results/bestck_gru_dclp3_p12/config.yaml",
+    "destination": "clinical/gru_dclp3.yaml",
+    "sha256": "5e40ca7ae4a9578947dd11e0757f3c021b7b978b0a4ca7890463ff3e007d5cef"
+  },
+  {
+    "path": "outputs/results/bestck_gru_dclp5_p12/config.yaml",
+    "destination": "clinical/gru_dclp5.yaml",
+    "sha256": "a2af00b316e743865cdf64f01a3aba6a67e51b8bdab16f31c95ab884931064ef"
+  },
+  {
+    "path": "outputs/results/bestck_gru_pedap_p12/config.yaml",
+    "destination": "clinical/gru_pedap.yaml",
+    "sha256": "4c44bdb8e44f048657f2d71bb9da15d089ef2f1d82533f2cfcc329bbac1da3ee"
+  },
+  {
+    "path": "outputs/results/bestck_gru_iobp2_p12/config.yaml",
+    "destination": "clinical/gru_iobp2.yaml",
+    "sha256": "b5bfd7690b20c340c019b26453ad54290228fe7e5dc9345563968eff264adf7f"
+  },
+  {
+    "path": "outputs/results/bestck_itransformer_dclp3_p12/config.yaml",
+    "destination": "clinical/itransformer_dclp3.yaml",
+    "sha256": "130fb84f507e06e64e20e36ed84a8bdde8d240de5080bf89cf6e9ca111478ceb"
+  },
+  {
+    "path": "outputs/results/bestck_itransformer_dclp5_p12/config.yaml",
+    "destination": "clinical/itransformer_dclp5.yaml",
+    "sha256": "a00ec390fbe8305547e63be63a074b220d5137bc4017a0e5da3670dee337fa36"
+  },
+  {
+    "path": "outputs/results/bestck_itransformer_pedap_p12/config.yaml",
+    "destination": "clinical/itransformer_pedap.yaml",
+    "sha256": "b28effe13133a83df3b1c50ef33664db4814d5922d7bc3d402dedc611328df3f"
+  },
+  {
+    "path": "outputs/results/bestck_itransformer_iobp2_p12/config.yaml",
+    "destination": "clinical/itransformer_iobp2.yaml",
+    "sha256": "24fd834175a3b31fb49b3cff43fc911d4a3466dd8fbdc4763e737f27299bd21f"
+  },
+  {
+    "path": "outputs/results/bestck_patchmlp_dclp3_p12/config.yaml",
+    "destination": "clinical/patchmlp_dclp3.yaml",
+    "sha256": "892daf261cd0b7a53fcfd8d0f4cdbd90ff606bf2e9b1252c9f8994adf208b689"
+  },
+  {
+    "path": "outputs/results/bestck_patchmlp_dclp5_p12/config.yaml",
+    "destination": "clinical/patchmlp_dclp5.yaml",
+    "sha256": "f521fcae0c15d45cfdff67a997d22c51dadcb2a73886da2eb3ceffcdd35d2af0"
+  },
+  {
+    "path": "outputs/results/bestck_patchmlp_pedap_p12/config.yaml",
+    "destination": "clinical/patchmlp_pedap.yaml",
+    "sha256": "04ca1a56b0d52e262d416df09b3504f4f71e97b56153209de48ade599f20010c"
+  },
+  {
+    "path": "outputs/results/bestck_patchmlp_iobp2_p12/config.yaml",
+    "destination": "clinical/patchmlp_iobp2.yaml",
+    "sha256": "b01f58426087df21f08fd48ed90f62c66d4aaaad9c2f5b38f8535fdf15f5c374"
+  },
+  {
+    "path": "outputs/results/bestck_attengluco_dclp3_p12/config.yaml",
+    "destination": "clinical/attengluco_dclp3.yaml",
+    "sha256": "4a41ee0386eeaa7f84788b6e7f5cab984df82d34309d9ec77a7926a81a7cbe2d"
+  },
+  {
+    "path": "outputs/results/bestck_attengluco_dclp5_p12/config.yaml",
+    "destination": "clinical/attengluco_dclp5.yaml",
+    "sha256": "cf9216dec8047cf01b0c63f2be3fe66292638c5571c48d574d44bec841afae02"
+  },
+  {
+    "path": "outputs/results/bestck_attengluco_pedap_p12/config.yaml",
+    "destination": "clinical/attengluco_pedap.yaml",
+    "sha256": "d8cb06f49abf4714e66de108fd45c01106d95abfe019f3b1ae2ddeceba4bb316"
+  },
+  {
+    "path": "outputs/results/bestck_attengluco_iobp2_p12/config.yaml",
+    "destination": "clinical/attengluco_iobp2.yaml",
+    "sha256": "1235ff987cda0b523e085a9a588793f6c2b9abdd495bc412923a31067e839e97"
+  },
+  {
+    "path": "outputs/results/bestck_patchmlp_glimmer_dclp3_p12/config.yaml",
+    "destination": "clinical/patchmlp_glimmer_dclp3.yaml",
+    "sha256": "2783300a25456b033495568a332df380837c2153728ccdb2f8e295848805faec"
+  },
+  {
+    "path": "outputs/results/bestck_patchmlp_glimmer_dclp5_p12/config.yaml",
+    "destination": "clinical/patchmlp_glimmer_dclp5.yaml",
+    "sha256": "f1f9e7fb2e64be673f654bbe17203507db73fec057096c0310a0efe1f6f51e34"
+  },
+  {
+    "path": "outputs/results/bestck_patchmlp_glimmer_pedap_p12/config.yaml",
+    "destination": "clinical/patchmlp_glimmer_pedap.yaml",
+    "sha256": "0d8c1d30e14b7bb7e36297d243ce915783962abf635a74d319a8f08e587515be"
+  },
+  {
+    "path": "outputs/results/bestck_patchmlp_glimmer_iobp2_p12/config.yaml",
+    "destination": "clinical/patchmlp_glimmer_iobp2.yaml",
+    "sha256": "f0f8109120a88627e566dfe7f969c26b07c76db698564237ebe1ca7e63c1bd53"
+  },
+  {
+    "path": "outputs/results/bestck_zoh_dclp3_p12/config.yaml",
+    "destination": "clinical/zoh_dclp3.yaml",
+    "sha256": "abedd0f4ed7ca36e2aadb5b5f077ef78e96c45c25dd9b01e326f1885a0967480"
+  },
+  {
+    "path": "outputs/results/bestck_zoh_dclp5_p12/config.yaml",
+    "destination": "clinical/zoh_dclp5.yaml",
+    "sha256": "b72117ad9222c5d85e9c516084596bfe17d0bfc6910d5e850336fe134bc38618"
+  },
+  {
+    "path": "outputs/results/bestck_zoh_pedap_p12/config.yaml",
+    "destination": "clinical/zoh_pedap.yaml",
+    "sha256": "fadc0b32c514cb85bb397eaef4a97ea0734d298d1b367316a99e482d9aadf7c7"
+  },
+  {
+    "path": "outputs/results/bestck_zoh_iobp2_p12/config.yaml",
+    "destination": "clinical/zoh_iobp2.yaml",
+    "sha256": "ae2c7aea5612b8baac5100a2cd59531359095b325f4b7918a9b6a1ba72f73b68"
+  },
+  {
+    "path": "outputs/results/cf4h_arimax/config.yaml",
+    "destination": "simulator/input_layout_reference.yaml",
+    "sha256": "87eb47a36906092f7402de6ae836274befd8d54861d8dba0878be62e5f257f39",
+    "purpose": "Input-layout and source-artifact reference only; published ARIMAX specification is in simulator_arimax_selection.json."
+  },
+  {
+    "path": "outputs/results/cf4h_dlinear/config.yaml",
+    "destination": "simulator/dlinear.yaml",
+    "sha256": "c3ba4f3dbef5f97b25bf00eee3b49b46a5e7fc27f37f86b0d0581d93f3b837b5"
+  },
+  {
+    "path": "outputs/results/cf4h_gru/config.yaml",
+    "destination": "simulator/gru.yaml",
+    "sha256": "26ec1b0063d3669d4de7e1c83b29daccef7d69b7017700b0fb107480a3e2939e"
+  },
+  {
+    "path": "outputs/results/cf4h_itransformer/config.yaml",
+    "destination": "simulator/itransformer.yaml",
+    "sha256": "53fff9da3ce9b2977e43b1b10144beb61ee060f1449e7dd76f4b8009b66096b9"
+  },
+  {
+    "path": "outputs/results/cf4h_patchmlp/config.yaml",
+    "destination": "simulator/patchmlp.yaml",
+    "sha256": "48a280758644447141271b9d2497a450cca7361eaae2783663eb2d21ae32bdc1"
+  },
+  {
+    "path": "outputs/results/cf4h_attengluco/config.yaml",
+    "destination": "simulator/attengluco.yaml",
+    "sha256": "f34626e6684c4c0ce201ad12d60d8dc68c1f8579c9ecc5b883cf31a5dc66bbaf"
+  },
+  {
+    "path": "outputs/results/cf4h_patchmlp_glimmer/config.yaml",
+    "destination": "simulator/patchmlp_glimmer.yaml",
+    "sha256": "d805eeb06397c4a3b1aac89a52544a9289a6566766c286a78823b900e936558a"
+  }
+]

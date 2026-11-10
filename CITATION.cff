@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, dataset, or evaluation, please cite the ML4H paper."
+type: software
+title: "Blood Glucose Forecasting: ML4H 2026 Evaluation"
+authors:
+  - family-names: Namazi
+    given-names: Alireza
+  - family-names: Shakeri
+    given-names: Heman
+version: ml4h2026-v1.0.0
+date-released: 2026-11-10
+repository-code: "https://github.com/Shakeri-Lab/benchmark-ml4h2026"
+url: "https://github.com/Shakeri-Lab/benchmark-ml4h2026/tree/ml4h2026-v1.0.0"
+preferred-citation:
+  type: conference-paper
+  title: "From Prediction to Practice: A Task-Aware Evaluation Framework for Blood Glucose Forecasting"
+  authors:
+    - family-names: Namazi
+      given-names: Alireza
+    - family-names: Shakeri
+      given-names: Heman
+  year: 2026
+  collection-title: "Proceedings of Machine Learning for Health"
+  collection-type: proceedings
+  volume: "346"
+  url: "https://github.com/Shakeri-Lab/benchmark-ml4h2026/tree/ml4h2026-v1.0.0"

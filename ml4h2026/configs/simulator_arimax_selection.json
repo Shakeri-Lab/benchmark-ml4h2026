@@ -1,0 +1,17 @@
+{
+  "candidate": 34,
+  "val_rmse": 27.37368709092789,
+  "spectral_radius": 0.9871687911313551,
+  "n_candidates": 240,
+  "n_eligible": 238,
+  "specification": {
+    "glucose_lags": 2,
+    "insulin_lags": 48,
+    "difference_order": 0,
+    "ridge": 0.01
+  },
+  "elapsed_seconds": 18.400832414627075,
+  "fresh_training_only_refit": true,
+  "refit_method": "one-step fitting using sufficient statistics of every eligible factual training row",
+  "refit_vs_search_max_abs_coefficient_difference": 0.0
+}

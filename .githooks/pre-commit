@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+# Keep the datasets on /project and out of git.
+#
+# .gitignore already excludes every dataset directory, and today that holds: the
+# clinical data has never been committed. But the protection is one `git add -A`
+# in a dirty tree away from failing, and this tree carries ~570 uncommitted
+# entries at a time. An ignore rule states an intention; this enforces it.
+#
+# Two rules, both about staged content only:
+#   1. nothing from a dataset, output or log directory
+#   2. nothing large, whatever it is called
+#
+# Install:  git config core.hooksPath .githooks
+# Override: git commit --no-verify   (deliberate, visible in the reflog)
+
+set -euo pipefail
+
+MAX_BYTES=${BENCHMARK_MAX_STAGED_BYTES:-5242880}   # 5 MiB
+
+DATA_PATHS='^(datasets_raw|datasets_processed|datasets_preprocessed|outputs|logs|surrogate/(dataset|outputs|slurm_logs))/'
+
+staged=$(git diff --cached --name-only --diff-filter=ACMR)
+[ -z "$staged" ] && exit 0
+
+fail=0
+
+while IFS= read -r path; do
+    [ -z "$path" ] && continue
+    if printf '%s\n' "$path" | grep -Eq "$DATA_PATHS"; then
+        printf 'blocked: %s\n' "$path" >&2
+        printf '         Datasets live on /project and are referenced by hash.\n' >&2
+        printf '         Record them with: python tools/dataset_manifest.py write <dir>\n' >&2
+        fail=1
+    fi
+done <<< "$staged"
+
+while IFS= read -r path; do
+    [ -z "$path" ] && continue
+    [ -f "$path" ] || continue
+    bytes=$(wc -c < "$path" | tr -d ' ')
+    if [ "$bytes" -gt "$MAX_BYTES" ]; then
+        printf 'blocked: %s is %s bytes (limit %s)\n' "$path" "$bytes" "$MAX_BYTES" >&2
+        printf '         Large artifacts stay where they are produced and are cited by hash.\n' >&2
+        fail=1
+    fi
+done <<< "$staged"
+
+if [ "$fail" -ne 0 ]; then
+    printf '\nNothing was committed. See docs/DATA_PROVENANCE.md.\n' >&2
+    exit 1
+fi

@@ -1,0 +1,37 @@
+{
+  "short": [
+    "novolin r",
+    "regular insulin",
+    "insulin regular",
+    "insulin r",
+    "novolog",
+    "aspart",
+    "insulin aspart",
+    "fiasp",
+    "insulin glulisine",
+    "apidra",
+    "humalog",
+    "insulin lispro",
+    "lispro",
+    "rapid"
+  ],
+  "long": [
+    "insulin glargine",
+    "glargine",
+    "lantus",
+    "basaglar",
+    "toujeo",
+    "insulin detemir",
+    "detemir",
+    "levemir",
+    "insulin degludec",
+    "degludec",
+    "tresiba",
+    "insulin nph",
+    "nph",
+    "neutral protamine hagedorn",
+    "ultralente",
+    "protaphane"
+  ],
+  "notes": "Add any new labels you see in the Shanghai_T1DM free-text 'Insulin dose - s.c.' column. Values are lowercased and normalized before matching."
+}

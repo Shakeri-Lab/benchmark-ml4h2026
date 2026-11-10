@@ -1,0 +1,258 @@
+{
+  "base_commit": "8fef0e8e7ad532aadb7bd61c6a7f4ba78bca6682",
+  "files": [
+    {
+      "path": "ml4h2026/warning/warning_metrics.py",
+      "source": "review_revision/warning_lead_budget_20261009/code/warning_metrics.py",
+      "source_sha256": "f5695b9f61ed9809108999a0ba2c9fcaa57ac8cf361710b41b63d4eda308e632",
+      "sha256": "f5695b9f61ed9809108999a0ba2c9fcaa57ac8cf361710b41b63d4eda308e632"
+    },
+    {
+      "path": "ml4h2026/warning/evaluate.py",
+      "source": "review_revision/warning_lead_budget_20261009/code/evaluate.py",
+      "source_sha256": "dd1be438fa0332c6462e8308cb2fffc0892f5b5fb7a2c25d36791bfd9ee4eaeb",
+      "sha256": "dd1be438fa0332c6462e8308cb2fffc0892f5b5fb7a2c25d36791bfd9ee4eaeb"
+    },
+    {
+      "path": "ml4h2026/warning/dense_inference.py",
+      "source": "review_revision/warning_lead_budget_20261009/code/dense_inference.py",
+      "source_sha256": "0fa1310e4413d3c63e6316c3478affdfcc1436cd9751ed136454a270cfec6ac0",
+      "sha256": "0fa1310e4413d3c63e6316c3478affdfcc1436cd9751ed136454a270cfec6ac0"
+    },
+    {
+      "path": "ml4h2026/warning/matched_metrics.py",
+      "source": "review_revision/warning_lead_budget_20261009/code/matched_metrics.py",
+      "source_sha256": "e3562b3a574604bbff59443af45e0e9cbb93eddca011a7f10c664f1f6be2075e",
+      "sha256": "e3562b3a574604bbff59443af45e0e9cbb93eddca011a7f10c664f1f6be2075e"
+    },
+    {
+      "path": "ml4h2026/warning/test_rate_matched.py",
+      "source": "review_revision/warning_lead_budget_20261009/code/test_rate_matched.py",
+      "source_sha256": "c789faa834e6e4bc866a95df3f46b98a03e8a1661861131260889026c7d0ac27",
+      "sha256": "c789faa834e6e4bc866a95df3f46b98a03e8a1661861131260889026c7d0ac27"
+    },
+    {
+      "path": "ml4h2026/warning/test_warning_metrics.py",
+      "source": "review_revision/warning_lead_budget_20261009/code/test_warning_metrics.py",
+      "source_sha256": "f08b3390c62aec91787660f72dd5f95bb12e15b85c0d9d27c6f52a6fe8439297",
+      "sha256": "f08b3390c62aec91787660f72dd5f95bb12e15b85c0d9d27c6f52a6fe8439297"
+    },
+    {
+      "path": "ml4h2026/warning/test_matched_metrics.py",
+      "source": "review_revision/warning_lead_budget_20261009/code/test_matched_metrics.py",
+      "source_sha256": "1ed98be584262d35ca345fb9372bb19c8fe1502a14cba7f3f0445c07ea552ccc",
+      "sha256": "1ed98be584262d35ca345fb9372bb19c8fe1502a14cba7f3f0445c07ea552ccc"
+    },
+    {
+      "path": "ml4h2026/warning/test_full_timeline_audit.py",
+      "source": "review_revision/warning_lead_budget_20261009/code/test_full_timeline_audit.py",
+      "source_sha256": "f3cf9ce15fa71495acd66fbbbc6ed899062892cbe73b9799f0295ad5a8ea6768",
+      "sha256": "f3cf9ce15fa71495acd66fbbbc6ed899062892cbe73b9799f0295ad5a8ea6768"
+    },
+    {
+      "path": "ml4h2026/warning/audit_full_timeline.py",
+      "source": "review_revision/warning_lead_budget_20261009/code/audit_full_timeline.py",
+      "source_sha256": "8e7538d90e2bad13cb4d29e22d7868f0002165f61604959e90af22a7a388313a",
+      "sha256": "8e7538d90e2bad13cb4d29e22d7868f0002165f61604959e90af22a7a388313a"
+    },
+    {
+      "path": "ml4h2026/warning/plot_model_slices.py",
+      "source": "review_revision/warning_lead_budget_20261009/code/plot_model_slices.py",
+      "source_sha256": "42097d4f35da4063b5b7c4e7e04b542b80a9fd6b8968c5ada5c63aa03dbf78fb",
+      "sha256": "42097d4f35da4063b5b7c4e7e04b542b80a9fd6b8968c5ada5c63aa03dbf78fb"
+    },
+    {
+      "path": "ml4h2026/iob/iob_forecaster.py",
+      "source": "review_revision/iob_forecaster_20261011/code/iob_forecaster.py",
+      "source_sha256": "ea1018dc6aad9727a0181db238ce1dda1d53d25fba8b07530e7cc8ca796154b7",
+      "sha256": "ea1018dc6aad9727a0181db238ce1dda1d53d25fba8b07530e7cc8ca796154b7"
+    },
+    {
+      "path": "ml4h2026/iob/train_and_infer.py",
+      "source": "review_revision/iob_forecaster_20261011/code/train_and_infer.py",
+      "source_sha256": "a68c0e89a7a175dccee8203740251ad261e620b857aaa549127ecc02c173961e",
+      "sha256": "a68c0e89a7a175dccee8203740251ad261e620b857aaa549127ecc02c173961e"
+    },
+    {
+      "path": "ml4h2026/iob/evaluate_baseline.py",
+      "source": "review_revision/iob_forecaster_20261011/code/evaluate_baseline.py",
+      "source_sha256": "f21d11cd873b0d7870c427a313bd636ee160234610339a2a16e95089cbea6eef",
+      "sha256": "f21d11cd873b0d7870c427a313bd636ee160234610339a2a16e95089cbea6eef"
+    },
+    {
+      "path": "ml4h2026/iob/test_iob_forecaster.py",
+      "source": "review_revision/iob_forecaster_20261011/code/test_iob_forecaster.py",
+      "source_sha256": "c343e4438aa6c28ea1f75b0df038044368332f1a9f8a4f0312e6bc2e3861a1c3",
+      "sha256": "c343e4438aa6c28ea1f75b0df038044368332f1a9f8a4f0312e6bc2e3861a1c3"
+    },
+    {
+      "path": "ml4h2026/simulator/recursive_arx.py",
+      "source": "review_revision/arimax_isolated_20261007/code/recursive_arx.py",
+      "source_sha256": "7d4da5a32ede70325fc26e4a55875ba5b22ea8341f8b288d1748b7821c3ab5df",
+      "sha256": "7d4da5a32ede70325fc26e4a55875ba5b22ea8341f8b288d1748b7821c3ab5df"
+    },
+    {
+      "path": "ml4h2026/simulator/test_recursive_arx.py",
+      "source": "review_revision/arimax_isolated_20261007/code/test_recursive_arx.py",
+      "source_sha256": "faadc896fc2507ecc71056ea2e62afe48409afcc15cccf7ddf5e221dcb5c1ca7",
+      "sha256": "faadc896fc2507ecc71056ea2e62afe48409afcc15cccf7ddf5e221dcb5c1ca7"
+    },
+    {
+      "path": "ml4h2026/simulator/run_isolated.py",
+      "source": "review_revision/arimax_isolated_20261007/code/run_isolated.py",
+      "source_sha256": "604f3dbbba3092fa448d547a0fb08f33c8d0ff0062e451177d1ec1c0e10b85c4",
+      "sha256": "bebafa8ca4592aa367f61dbb272f03f37aa8ad1da3be28cacfbb1ca1809fda26"
+    },
+    {
+      "path": "ml4h2026/simulator/refit_and_evaluate.py",
+      "source": "review_revision/arimax_isolated_20261007/code/refit_and_evaluate.py",
+      "source_sha256": "6d946c20f01158f7c736d62520f7f918c534a397e57d6fb4a7ce58505fd2371d",
+      "sha256": "10122526ac59e5c81bd66ab64cd4cc204ff2c97e8bbe7552619f924656701b04"
+    },
+    {
+      "path": "ml4h2026/simulator/make_tables.py",
+      "source": "review_revision/arimax_isolated_20261007/code/make_tables.py",
+      "source_sha256": "bedd6745fc6c0a0c39139422344014c7331527f9579dea19a0f9906327f45070",
+      "sha256": "63a6af512e5f7015bb11ca6a0702e5f4c37ec4f8faf5e79082c361f32b604843"
+    },
+    {
+      "path": "ml4h2026/simulator/restricted_selection.py",
+      "source": "review_revision/scripts/arimax_restricted_selection_20261011.py",
+      "source_sha256": "eae0b568ee89c0f75c12e9a506f41e131501baf6344bf30c6e31a8562099c700",
+      "sha256": "eae0b568ee89c0f75c12e9a506f41e131501baf6344bf30c6e31a8562099c700"
+    },
+    {
+      "path": "ml4h2026/simulator/export_aggregates.py",
+      "source": "review_revision/scripts/camera_ready_exports_20261030.py",
+      "source_sha256": "09ec13d6bc8b6fdd47200cd8a8804eacc26adba423e40e921314581891c8889f",
+      "sha256": "09ec13d6bc8b6fdd47200cd8a8804eacc26adba423e40e921314581891c8889f"
+    },
+    {
+      "path": "ml4h2026/results/restricted_selection.csv",
+      "source": "ml4h_camera_ready_20261106/results/restricted_selection.csv",
+      "source_sha256": "9c6e2840baaa3262c966ecd714651197d0264106ef7d402513f72b09d155fbd4",
+      "sha256": "9c6e2840baaa3262c966ecd714651197d0264106ef7d402513f72b09d155fbd4"
+    },
+    {
+      "path": "ml4h2026/results/action_confusion_counts.csv",
+      "source": "ml4h_camera_ready_20261106/results/action_confusion_counts.csv",
+      "source_sha256": "36e241d2692e841aeebd7e60937c4b0791961d19195174f377ec901ad79fe3bb",
+      "sha256": "36e241d2692e841aeebd7e60937c4b0791961d19195174f377ec901ad79fe3bb"
+    },
+    {
+      "path": "ml4h2026/results/warning_slice_contrasts.csv",
+      "source": "ml4h_camera_ready_20261106/results/warning_slice_contrasts.csv",
+      "source_sha256": "67758bb611dcc8fed40513c77287ed86e9a05908a7a6538de9f3e8e3a867f96b",
+      "sha256": "67758bb611dcc8fed40513c77287ed86e9a05908a7a6538de9f3e8e3a867f96b"
+    },
+    {
+      "path": "ml4h2026/results/table5.csv",
+      "source": "ml4h_camera_ready_20261106/results/table5.csv",
+      "source_sha256": "1694681903175eb709945df7ac9491499446cfcbe94ffdbe5b52567d2e94b0c7",
+      "sha256": "1694681903175eb709945df7ac9491499446cfcbe94ffdbe5b52567d2e94b0c7"
+    },
+    {
+      "path": "ml4h2026/results/table4.csv",
+      "source": "ml4h_camera_ready_20261106/results/table4.csv",
+      "source_sha256": "268c6d046938dd62f7dbf072476db4d540fdcf8ef22ba8faca87efcc7b5f49d5",
+      "sha256": "268c6d046938dd62f7dbf072476db4d540fdcf8ef22ba8faca87efcc7b5f49d5"
+    },
+    {
+      "path": "ml4h2026/results/warning_curves.csv",
+      "source": "ml4h_camera_ready_20261106/results/warning_curves.csv",
+      "source_sha256": "fd749f978531899c3bd43f8a6abf58f7258caa91e2caad44aa4b7740fb234815",
+      "sha256": "fd749f978531899c3bd43f8a6abf58f7258caa91e2caad44aa4b7740fb234815"
+    },
+    {
+      "path": "ml4h2026/results/effect_metrics_all_horizons.csv",
+      "source": "ml4h_camera_ready_20261106/results/effect_metrics_all_horizons.csv",
+      "source_sha256": "cb3992bcc3a9cab2ec2f82cc4bb33242f3c993bce7c1298e5a557bee9ebeb396",
+      "sha256": "cb3992bcc3a9cab2ec2f82cc4bb33242f3c993bce7c1298e5a557bee9ebeb396"
+    },
+    {
+      "path": "ml4h2026/figures/overall_figure.pdf",
+      "source": "ml4h_camera_ready_20261106/figures/overall_figure.pdf",
+      "source_sha256": "32377c29b603c55577e7d80a6b73d54f1ac68362e1c29f7ce2c627caf8ef591b",
+      "sha256": "32377c29b603c55577e7d80a6b73d54f1ac68362e1c29f7ce2c627caf8ef591b"
+    },
+    {
+      "path": "ml4h2026/figures/warning_time_main.pdf",
+      "source": "ml4h_camera_ready_20261106/figures/warning_time_main.pdf",
+      "source_sha256": "d9d9482aff0d841db4e4794cfa132bb9f54511e98346f464f6560f223e8c83a4",
+      "sha256": "d9d9482aff0d841db4e4794cfa132bb9f54511e98346f464f6560f223e8c83a4"
+    },
+    {
+      "path": "ml4h2026/figures/warning_all_models_b1p5.pdf",
+      "source": "ml4h_camera_ready_20261106/figures/warning_all_models_b1p5.pdf",
+      "source_sha256": "5a4aa5f23659ffd3fef4d865748705b4d9b461a5e8bbb2555c4efabf6de0efb0",
+      "sha256": "5a4aa5f23659ffd3fef4d865748705b4d9b461a5e8bbb2555c4efabf6de0efb0"
+    },
+    {
+      "path": "ml4h2026/figures/warning_all_models_b1.pdf",
+      "source": "ml4h_camera_ready_20261106/figures/warning_all_models_b1.pdf",
+      "source_sha256": "3e9cb408572044c526976966756db5e527021da1e104068fc5e0efbccf2c63eb",
+      "sha256": "3e9cb408572044c526976966756db5e527021da1e104068fc5e0efbccf2c63eb"
+    },
+    {
+      "path": "ml4h2026/figures/warning_all_models_b3.pdf",
+      "source": "ml4h_camera_ready_20261106/figures/warning_all_models_b3.pdf",
+      "source_sha256": "e6eb8f0eb0c3b733124cb1a930123791e852ca6704f48f296aeaed354eaed343",
+      "sha256": "e6eb8f0eb0c3b733124cb1a930123791e852ca6704f48f296aeaed354eaed343"
+    },
+    {
+      "path": "ml4h2026/figures/warning_all_models_b2.pdf",
+      "source": "ml4h_camera_ready_20261106/figures/warning_all_models_b2.pdf",
+      "source_sha256": "e0464fdf02822d5d03fe1321ab09b61b60b84480bc1129f1c8c27bfa03222c01",
+      "sha256": "e0464fdf02822d5d03fe1321ab09b61b60b84480bc1129f1c8c27bfa03222c01"
+    },
+    {
+      "path": "ml4h2026/figures/warning_all_models_b2p5.pdf",
+      "source": "ml4h_camera_ready_20261106/figures/warning_all_models_b2p5.pdf",
+      "source_sha256": "42aa0f48820659f464a7fdc2b047a9b80c77b0904a7b4041e9ce7192886e819d",
+      "sha256": "42aa0f48820659f464a7fdc2b047a9b80c77b0904a7b4041e9ce7192886e819d"
+    },
+    {
+      "path": "ml4h2026/configs/simulator_arimax_selection.json",
+      "source": "review_revision/arimax_isolated_20261007/results/recursive_arx/selection.json",
+      "source_sha256": "79a69fa248707e2c168fef812ae186debb55ed57f8f18a31ec751b7eb72158d4",
+      "sha256": "79a69fa248707e2c168fef812ae186debb55ed57f8f18a31ec751b7eb72158d4"
+    },
+    {
+      "path": "ml4h2026/configs/iob/dclp5.json",
+      "source": "review_revision/iob_forecaster_20261011/models/dclp5.json",
+      "source_sha256": "bd54ac02bd929802104193303cfc1636f5c5a3e59f31b38c4ca90b93add8adb2",
+      "sha256": "bd54ac02bd929802104193303cfc1636f5c5a3e59f31b38c4ca90b93add8adb2"
+    },
+    {
+      "path": "ml4h2026/configs/iob/pedap.json",
+      "source": "review_revision/iob_forecaster_20261011/models/pedap.json",
+      "source_sha256": "4c8127ac11af898f0aaf5ec8617b5e9297e8046b9a196758664c6f9a89cf4f85",
+      "sha256": "4c8127ac11af898f0aaf5ec8617b5e9297e8046b9a196758664c6f9a89cf4f85"
+    },
+    {
+      "path": "ml4h2026/configs/iob/dclp3.json",
+      "source": "review_revision/iob_forecaster_20261011/models/dclp3.json",
+      "source_sha256": "808e06e2f3a6114020a561851ce167abe888d416bbbd454a1e9283ec71e8844c",
+      "sha256": "808e06e2f3a6114020a561851ce167abe888d416bbbd454a1e9283ec71e8844c"
+    },
+    {
+      "path": "ml4h2026/configs/iob/iobp2.json",
+      "source": "review_revision/iob_forecaster_20261011/models/iobp2.json",
+      "source_sha256": "4a7712dec454ccb395d7e512c9bad052d9d0f5c9a960cc48f131daa5d815f3a6",
+      "sha256": "4a7712dec454ccb395d7e512c9bad052d9d0f5c9a960cc48f131daa5d815f3a6"
+    }
+  ],
+  "unchanged_numerical_functions": [
+    "run_isolated.py:write_json",
+    "run_isolated.py:sha",
+    "run_isolated.py:source_config",
+    "run_isolated.py:raw",
+    "run_isolated.py:training_moments",
+    "run_isolated.py:arx_search",
+    "run_isolated.py:infer_arx",
+    "run_isolated.py:score_effect",
+    "run_isolated.py:integrity",
+    "refit_and_evaluate.py:arx"
+  ],
+  "packaging_changes": "Unused simulator diagnostic stages removed; numerical training/search/refit/inference functions unchanged. Only one simulator ARIMAX formulation is exposed."
+}

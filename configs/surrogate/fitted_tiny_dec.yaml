@@ -1,0 +1,41 @@
+loss:
+  name: decoupled_directional_seg_surrogate
+  type: decoupled_directional_seg_surrogate
+  parameters:
+    b_plus: -2.2399601470312906
+    b_minus: -2.2167346242131436
+    raw_rho: -13.815510087593516
+    rho: 9.999999703707313e-07
+    raw_lambda_FN: -13.815510683374654
+    lambda_FN: 9.999993745900864e-07
+    raw_c: -4.271511795127386
+    c: 0.013864109082606792
+    raw_vector:
+    - -2.2399601470312906
+    - -2.2167346242131436
+    - -13.815510087593516
+    - -13.815510683374654
+    - -4.271511795127386
+  fixed_hyperparameters:
+    w_min: 5.0
+    H: 80.0
+    tau: 0.15
+    tau_h: 8.0
+    train_lambda_FN: true
+    train_rho: true
+  grid:
+    max: 100
+    min: 40
+    step: 1
+  seg_lookup:
+    source: metrics/risk_matrix_seg.npy
+    orientation: ClinicalMetrics.SEG(y_ref, y_pred) -> risk_matrix[y_pred, y_ref]
+  fitting_weight_recipe:
+    alpha_clin: 0.2
+    alpha_data: 0.4
+    alpha_uniform: 0.4
+    joint_power: 0.5
+    p_y: 0.5
+  fit_artifact_dir: /tmp/tmpi2715xgk/out/tiny_dec
+  source_config: /tmp/tmpi2715xgk/cfg.yaml
+  created_at_utc: '2026-05-19T15:32:22.185968Z'

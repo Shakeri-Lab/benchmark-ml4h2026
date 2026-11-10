@@ -1,0 +1,53 @@
+split:
+  split_name: dclp3_patients_70_10_20_seed42
+  split_root: configs/preprocessing
+  processed_root: datasets_processed
+  train_part: train
+  val_part: val
+training:
+  epochs: 30
+  loss: mse
+  amp: false
+  grad_clip_norm: 1.0
+  compile: false
+  early_stopping:
+    patience: 5
+    min_delta: 0.01
+  optimizer:
+    name: adamw
+    lr: 0.0001
+    weight_decay: 0.001
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+  scheduler:
+    name: reduce_on_plateau
+    min_lr: 1.0e-06
+    patience: 2
+    factor: 0.5
+model_data:
+  seed: 42
+  model:
+    name: gru
+    params:
+      hidden_size: 16
+      num_layers: 2
+      dropout: 0.2
+      bidirectional: true
+      use_layernorm: true
+      head_type: linear
+      head_hidden_dim: 32
+      head_num_layers: 2
+      univariate: false
+  dataloader:
+    history_len: 48
+    pred_len: 6
+    stride: 6
+    batch_size: 128
+    univariate: false
+    num_workers: 0
+    shuffle: true
+    nocturnal_start_hour: 0
+    nocturnal_end_hour: 6
+notes: '30min horizon: Multivariate gru on DCLP3'

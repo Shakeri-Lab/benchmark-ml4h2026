@@ -1,0 +1,43 @@
+family,model,model_id,metric,value,lo,hi,displayed_as_dash
+basal,Recursive ARX,arimax,rmse_effect,141.32247886657714,129.4560017299652,153.69043583869936,False
+basal,Recursive ARX,arimax,sign_agreement,0.046875,0.0203125,0.0828515624999999,False
+basal,Recursive ARX,arimax,kendall_rank_corr,-0.8381944444444445,-0.8791840277777778,-0.7958333333333333,False
+basal,DLinear,dlinear,rmse_effect,52.09727592468262,46.38962944507599,58.93676952838898,False
+basal,DLinear,dlinear,sign_agreement,0.0,0.0,0.0,True
+basal,DLinear,dlinear,kendall_rank_corr,,,,True
+basal,GRU,gru,rmse_effect,86.70138397216797,80.24942646026611,92.8773078918457,False
+basal,GRU,gru,sign_agreement,0.0953125,0.0484375,0.1422265624999999,False
+basal,GRU,gru,kendall_rank_corr,-0.7236111111111111,-0.8055729166666666,-0.6464930555555556,False
+basal,iTransformer,itransformer,rmse_effect,98.09159240722656,90.12692237854004,106.1841312122345,False
+basal,iTransformer,itransformer,sign_agreement,0.0609375,0.0234375,0.1094140624999999,False
+basal,iTransformer,itransformer,kendall_rank_corr,-0.7708333333333333,-0.8305555555555555,-0.707638888888889,False
+basal,PatchMLP,patchmlp,rmse_effect,100.32706909179689,93.09221897125244,107.64467595100402,False
+basal,PatchMLP,patchmlp,sign_agreement,0.059375,0.025,0.103125,False
+basal,PatchMLP,patchmlp,kendall_rank_corr,-0.7715277777777778,-0.8215277777777776,-0.7228819444444444,False
+basal,AttenGluco,attengluco,rmse_effect,97.83994598388672,91.46488699913024,104.75681493759154,False
+basal,AttenGluco,attengluco,sign_agreement,0.0546875,0.0234375,0.0953125,False
+basal,AttenGluco,attengluco,kendall_rank_corr,-0.8289819821136282,-0.8748199325607874,-0.7841380634547106,False
+basal,Glimmer\textsuperscript{*},patchmlp_glimmer,rmse_effect,99.8205108642578,93.1762452316284,106.72110349655152,False
+basal,Glimmer\textsuperscript{*},patchmlp_glimmer,sign_agreement,0.05625,0.025,0.096875,False
+basal,Glimmer\textsuperscript{*},patchmlp_glimmer,kendall_rank_corr,-0.7902777777777777,-0.8423611111111111,-0.7367708333333333,False
+bolus,Recursive ARX,arimax,rmse_effect,25.73354389667511,22.18015493869781,29.034109092950818,False
+bolus,Recursive ARX,arimax,sign_agreement,0.8567999007284388,0.8207563426231407,0.8880613038156172,False
+bolus,Recursive ARX,arimax,kendall_rank_corr,0.6661413337468161,0.6102971363368307,0.7269109383105946,False
+bolus,DLinear,dlinear,rmse_effect,37.00732936859131,33.97317151784897,40.56032914876938,False
+bolus,DLinear,dlinear,sign_agreement,0.038093944671216,0.0291427729208863,0.0459226991611003,True
+bolus,DLinear,dlinear,kendall_rank_corr,,,,True
+bolus,GRU,gru,rmse_effect,29.918563079833984,27.034766840934758,32.57625618457794,False
+bolus,GRU,gru,sign_agreement,0.7620958682835194,0.7200327139014532,0.8008292352197435,False
+bolus,GRU,gru,kendall_rank_corr,0.4900778005243048,0.4109454459014224,0.5651909143135071,False
+bolus,iTransformer,itransformer,rmse_effect,38.066717338562015,34.4219268989563,41.45501962661744,False
+bolus,iTransformer,itransformer,sign_agreement,0.4783742609077639,0.413342203842452,0.5386576296835024,False
+bolus,iTransformer,itransformer,kendall_rank_corr,-0.0764613472780368,-0.1930313782042701,0.042008610206586,False
+bolus,PatchMLP,patchmlp,rmse_effect,31.06839084625244,27.856471440792085,34.35466351032257,False
+bolus,PatchMLP,patchmlp,sign_agreement,0.7636155517677015,0.7167515892304624,0.8097573920819194,False
+bolus,PatchMLP,patchmlp,kendall_rank_corr,0.4435522737811241,0.3568526557315625,0.5281897171489529,False
+bolus,AttenGluco,attengluco,rmse_effect,38.77235383987427,35.691686861515045,41.64488119840622,False
+bolus,AttenGluco,attengluco,sign_agreement,0.6171764068945235,0.5577265681056048,0.6669361506977797,False
+bolus,AttenGluco,attengluco,kendall_rank_corr,0.1221807133999569,0.0066297454097846,0.2304206329495968,False
+bolus,Glimmer\textsuperscript{*},patchmlp_glimmer,rmse_effect,31.44163074493408,28.547784512043,34.52046445608139,False
+bolus,Glimmer\textsuperscript{*},patchmlp_glimmer,sign_agreement,0.7337184940671662,0.6891925532036506,0.7791342819733036,False
+bolus,Glimmer\textsuperscript{*},patchmlp_glimmer,kendall_rank_corr,0.4337915337052659,0.3436312913599934,0.5159101608193427,False

@@ -1,0 +1,54 @@
+data:
+  # Split CSV path (can be overridden via CLI --split_path)
+  split_path: datasets_processed/DCLP3-private/splits/dclp3-private_patients_70_10_20_seed42/test.csv
+  split_part: test
+
+  # All units are "steps" (1 step = 5 minutes)
+  history_len: 24
+  pred_len: 12
+  stride: 12
+  batch_size: 1024
+  univariate: false
+  num_workers: 0
+  processed_root: datasets_processed
+  input_layout: BTC
+  nocturnal_start_hour: 0
+  nocturnal_end_hour: 6
+
+shap:
+  horizons_steps: [3, 6, 12]
+  n_permutations: 16
+  n_background_draws: 16
+  microbatch_size: 2048
+  seed: 42
+  resample_background_each_permutation: false
+
+background:
+  prefer_same_slice: true
+  min_pool_size_same_slice: 25
+  allow_global_fallback: false
+  global_prefer_same_slice: false
+  exclude_self: false
+  max_per_pid_slice: null
+  max_per_pid: null
+  max_global: null
+
+output:
+  partition_by_slice: true
+  file_format: npz
+  max_eval_samples: null
+  diagnostics_subset_size: 128
+
+model:
+  compile: false
+
+# Map exact feature column names (as returned by the dataloader) to modalities.
+# For new datasets with extra channels, add them here by column name.
+modality_channels:
+  cgm: ["cgm"]
+  meal: ["meal"]
+  bolus: ["bolus"]
+
+# Optional: override default windows per modality (in steps).
+# windows_steps_by_modality:
+#   cgm: [[0,3],[3,6],[6,12],[12,24]]

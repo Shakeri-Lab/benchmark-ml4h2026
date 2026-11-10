@@ -1,0 +1,47 @@
+{
+  "dataset": "action_cf_benchmark_controliq",
+  "selected": {
+    "arimax": {
+      "best_run": "outputs/hyperparameters/arimax_action_cf_benchmark_controliq/039",
+      "val_rmse": 34.94008037503305,
+      "train_config": "configs/counterfactual_best_controliq/train/arimax_action_cf_benchmark_controliq.yaml",
+      "eval_config": "configs/counterfactual_best_controliq/eval/arimax_action_cf_benchmark_controliq.yaml"
+    },
+    "attengluco": {
+      "best_run": "outputs/hyperparameters/attengluco_action_cf_benchmark_controliq/033",
+      "val_rmse": 12.726744654979182,
+      "train_config": "configs/counterfactual_best_controliq/train/attengluco_action_cf_benchmark_controliq.yaml",
+      "eval_config": "configs/counterfactual_best_controliq/eval/attengluco_action_cf_benchmark_controliq.yaml"
+    },
+    "dlinear": {
+      "best_run": "outputs/hyperparameters/dlinear_action_cf_benchmark_controliq/039",
+      "val_rmse": 33.82398133812771,
+      "train_config": "configs/counterfactual_best_controliq/train/dlinear_action_cf_benchmark_controliq.yaml",
+      "eval_config": "configs/counterfactual_best_controliq/eval/dlinear_action_cf_benchmark_controliq.yaml"
+    },
+    "gru": {
+      "best_run": "outputs/hyperparameters/gru_action_cf_benchmark_controliq/053",
+      "val_rmse": 12.071804707456069,
+      "train_config": "configs/counterfactual_best_controliq/train/gru_action_cf_benchmark_controliq.yaml",
+      "eval_config": "configs/counterfactual_best_controliq/eval/gru_action_cf_benchmark_controliq.yaml"
+    },
+    "itransformer": {
+      "best_run": "outputs/hyperparameters/itransformer_action_cf_benchmark_controliq/058",
+      "val_rmse": 11.245596567841401,
+      "train_config": "configs/counterfactual_best_controliq/train/itransformer_action_cf_benchmark_controliq.yaml",
+      "eval_config": "configs/counterfactual_best_controliq/eval/itransformer_action_cf_benchmark_controliq.yaml"
+    },
+    "patchmlp": {
+      "best_run": "outputs/hyperparameters/patchmlp_action_cf_benchmark_controliq/062",
+      "val_rmse": 9.412731715014468,
+      "train_config": "configs/counterfactual_best_controliq/train/patchmlp_action_cf_benchmark_controliq.yaml",
+      "eval_config": "configs/counterfactual_best_controliq/eval/patchmlp_action_cf_benchmark_controliq.yaml"
+    },
+    "patchmlp_glimmer": {
+      "based_on_patchmlp_run": "outputs/hyperparameters/patchmlp_action_cf_benchmark_controliq/062",
+      "patchmlp_val_rmse": 9.412731715014468,
+      "train_config": "configs/counterfactual_best_controliq/train/patchmlp_glimmer_action_cf_benchmark_controliq.yaml",
+      "eval_config": "configs/counterfactual_best_controliq/eval/patchmlp_glimmer_action_cf_benchmark_controliq.yaml"
+    }
+  }
+}

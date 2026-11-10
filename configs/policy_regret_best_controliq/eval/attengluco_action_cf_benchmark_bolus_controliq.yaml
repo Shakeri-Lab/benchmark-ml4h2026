@@ -1,0 +1,41 @@
+split:
+  processed_root: datasets_processed
+  split_name: action_cf_benchmark_bolus_controliq
+  split_root: configs/preprocessing
+  split_part: test
+model_data:
+  dataloader:
+    batch_size: 128
+    history_len: 288
+    nocturnal_end_hour: 6
+    nocturnal_start_hour: 0
+    num_workers: 0
+    pred_len: 24
+    shuffle: false
+    stride: 24
+    univariate: false
+  model:
+    name: attengluco
+    params:
+      d_model: 64
+      ff_units: 128
+      n_heads: 4
+      univariate: false
+  seed: 42
+evaluation:
+  metrics:
+  - rmse
+  - mae
+  - seg
+  - gmse
+  - grmse
+  - ceg_ratio
+  - peg_ratio
+  - seg_z_ratio
+  event_thresholds:
+    post_meal: 3
+    post_bolus: 3
+    nocturnal: 0
+  compile: false
+notes: Policy-regret eval config for attengluco on action_cf_benchmark_bolus_controliq;
+  selected from 033 with val_rmse=12.726745
